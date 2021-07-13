@@ -4,11 +4,13 @@ import "./App.css";
 
 function App() {
 	const [resultSum, setResultSum] = useState();
+	const [resultResta, setResultResta] = useState();
 	const [inputVal, setInputVal] = useState(0);
 	const [inputVal2, setInputVal2] = useState(0);
 
 	useEffect(() => {
 		setResultSum(Number(inputVal) + Number(inputVal2));
+		setResultResta(Number(inputVal) - Number(inputVal2));
 	}, [inputVal, inputVal2]);
 
 	const reset = (e) => {
@@ -50,6 +52,7 @@ function App() {
 					<button onClick={reset2}>Clear</button>
 				</div>
 				<p>Resultado de Sumar {resultSum ? resultSum : "0"}</p>
+				<p>Resultado de Restar {resultResta ? resultResta : "0"}</p>
 			</div>
 		</>
 	);
