@@ -25,3 +25,15 @@ body {
 	margin-bottom: 0.5rem;
 	cursor: pointer;
 }
+.results{
+	margin: 0 auto;
+    width: 25%;
+    text-align: left;
+	display: flex;
+	flex-direction: column;
+	/* text-align: left; */
+}
+.results p{
+	border: 1px solid #ccc;
+	padding: 10px;
+}
