@@ -54,7 +54,6 @@ function App() {
   };
   const checkType2 = (e) => {
     let check = isNaN(e.target.value);
-    console.log(check);
     if (!check) {
       setInputVal2(e.target.value);
     } else {

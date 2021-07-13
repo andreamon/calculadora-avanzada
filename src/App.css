@@ -33,7 +33,29 @@ body {
 	flex-direction: column;
 	/* text-align: left; */
 }
+.results h3{
+	text-align: center;
+}
 .results p{
 	border: 1px solid #ccc;
+	box-shadow: 0 4px 4px 0 rgb(0 0 0 / 10%), 0 6px 10px 0 rgb(0 0 0 / 10%);
+	border-radius: 10px;
 	padding: 10px;
+	font-style: italic;
+	text-align: center;
+}
+.results p:hover{
+	background-color: #4f9ceb;
+	color: #fff;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 625px) {
+	body {
+		font-size: 12px;
+	}
+	.results{
+		width: 100%;
+	}
 }
