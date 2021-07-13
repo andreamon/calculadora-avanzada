@@ -1,42 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
 	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
 }
 .App {
 	text-align: center;
 }
-
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-}
-
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
+.main-input {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+	align-items: baseline;
 }
-
-.App-link {
-	color: #61dafb;
+.main-input input {
+	padding: 0.5rem;
+	margin-right: 1rem;
+	/* margin-bottom: 1rem; */
 }
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+.main-input button {
+	background-color: #4f9ceb;
+	color: #fff;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	padding: 10px 50px;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
 }

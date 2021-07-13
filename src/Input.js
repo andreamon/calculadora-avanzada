@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-function Input() {
+function Input(props) {
   const [inputVal, setInputVal] = useState(0);
   function reset() {
     setInputVal(0);
   }
   function seeResult(e) {
+    props.valRes = e.target.value;
     console.log(e.target.value);
   }
   return (
