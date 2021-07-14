@@ -37,18 +37,16 @@ function App() {
     let inputID = e.target.id;
     if (!verifIsNumber && inputID == 1) {
       setInput1(e.target.value);
-    }
-    //  else {
-    //   document.getElementById(e.target.id).value = "";
-    //   setInput1(0);
-    // }
-    if (!verifIsNumber && inputID == 2) {
+    }else if(!verifIsNumber && inputID == 2){
       setInput2(e.target.value);
+    } else if(inputID == 1){
+        document.getElementById(e.target.id).value = "";
+        setInput1(0);
     }
-    // else {
-    //   document.getElementById(e.target.id).value = "";
-    //   setInput2(0);
-    // }
+     else {
+      document.getElementById(e.target.id).value = "";
+      setInput2(0);
+    }
   };
 
   const clear = (id) => {
