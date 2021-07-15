@@ -52,13 +52,15 @@ ul {
 	/* font-style: italic; */
 	text-align: center;
 }
-.view-results:hover {
+.view-results:hover,
+.view-results:active {
 	background-color: #4f9ceb;
 	color: #fff;
 	border: 1px solid transparent;
 	cursor: pointer;
 }
-.view-results:hover > .type-result {
+.view-results:hover > .type-result,
+.view-results:active > .type-result {
 	border: 1px solid #fff;
 	color: #fff;
 }
