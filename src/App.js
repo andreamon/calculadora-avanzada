@@ -59,18 +59,7 @@ function App() {
 				<h2>Ejercicio calculadora avanzada</h2>
 				<Input id={1} checkType={check} clear={clear} />
 				<Input id={2} checkType={check} clear={clear} />
-
-				<Output list={list} />
-				{/* <div className="results">
-					<h3>Resultados</h3>
-					{list.map((el, index) => {
-						return (
-							<p key={index}>
-								{el.type} {el.res}
-							</p>
-						);
-					})}
-				</div> */}
+				<Output listRes={list} setListRes={setList} />
 			</div>
 		</>
 	);

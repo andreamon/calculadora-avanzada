@@ -39,7 +39,11 @@ body {
 .results h3 {
 	text-align: center;
 }
-.results div {
+ul {
+	margin: 0;
+	padding: 0;
+}
+.results ul li {
 	border: 1px solid #ccc;
 	/* box-shadow: 0 4px 4px 0 rgb(0 0 0 / 10%), 0 6px 10px 0 rgb(0 0 0 / 10%); */
 	border-radius: 5px;
